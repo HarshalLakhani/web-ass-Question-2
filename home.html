@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Ticket Checker - Home</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding-top: 20px;
+        }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        .navbar-brand {
+            font-size: 1.5rem;
+        }
+
+        .navbar-nav {
+            margin-left: auto;
+        }
+
+        .nav-item {
+            margin-right: 10px;
+        }
+
+        .nav-link {
+            color: #000000;
+        }
+
+        .nav-link:hover {
+            color: #ccc;
+        }
+
+        .heading {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .heading h1 {
+            font-size: 2.5rem;
+            color: #333;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .card {
+            margin-bottom: 20px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card-img-top {
+            height: 300px;
+            object-fit: cover;
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+        }
+
+        .card-text {
+            color: #6c757d;
+        }
+
+        .btn-primary {
+            background-color: #007bff;
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3;
+        }
+
+        .btn-primary:focus {
+            background-color: #0056b3;
+            box-shadow: none;
+        }
+
+        .btn-primary:active {
+            background-color: #0056b3;
+        }
+    </style>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Movie Ticket Checker</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="hollywood.html">Hollywood</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="Bollywood.html">Bollywood</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="All-Movies.html">All Movies</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="heading">
+                    <h1>Welcome to Movie Ticket Checker</h1>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/71niXI3lxlL._AC_SY679_.jpg" class="card-img-top"
+                        alt="Hollywood">
+                    <div class="card-body">
+                        <h5 class="card-title">Hollywood</h5>
+                        <p class="card-text">Explore Hollywood movies</p>
+                        <a href="hollywood.html" class="btn btn-primary">View Movies</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://i0.wp.com/www.rvcj.com/wp-content/uploads/2018/03/PK.jpg?w=584&ssl=1"
+                        class="card-img-top" alt="Bollywood">
+                    <div class="card-body">
+                        <h5 class="card-title">Bollywood</h5>
+                        <p class="card-text">Discover Bollywood movies</p>
+                        <a href="#" class="btn btn-primary">View Movies</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="https://im.indiatimes.in/media/content/2019/Jul/bollywood_copying_hollywood_1562653883.jpg?w=725&h=483&cc=1"
+                        class="card-img-top" alt="All Movies">
+                    <div class="card-body">
+                        <h5 class="card-title">All Movies</h5>
+                        <p class="card-text">Browse all movies</p>
+                        <a href="#" class="btn btn-primary">View Movies</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

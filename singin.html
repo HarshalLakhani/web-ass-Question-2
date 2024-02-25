@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card p-4">
+                    <h2 class="mb-4">Sign In</h2>
+                    <form>
+                        <div class="mb-3">
+                            <input type="email" class="form-control" id="signinEmail" placeholder="Email" required>
+                        </div>
+                        <div class="mb-3">
+                            <input type="password" class="form-control" id="signinPassword" placeholder="Password"
+                                required>
+                        </div>
+                        <button type="button" class="btn btn-primary" onclick="signin()">Sign In</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function signin() {
+        let email = document.getElementById('signinEmail').value;
+        let password = document.getElementById('signinPassword').value;
+
+        let users = JSON.parse(localStorage.getItem('users')) || [];
+        let user = users.find(u => u.email === email && u.password === password);
+        if (user) {
+            alert('Sign in successful! Redirecting to Home page.');
+            window.location.href = 'home.html'; // Redirect to home page
+        } else {
+            alert('Invalid email or password.');
+        }
+    }
+</script>
+
+</html>
